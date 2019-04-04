@@ -1,0 +1,35 @@
+.clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 640px;
+  }
+
+  @media @desktop-widths {
+    width: 960px
+  }
+}
+
+.container-fluid() {
+  @media @tablet-widths {
+    width: 87%;
+    margin: 0 auto;
+  }
+
+  @media @desktop-widths {
+    width: 83%;
+    min-width: 1170px;
+    max-width: 1602px;
+    margin: 0 auto;
+  }
+}

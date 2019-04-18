@@ -1,0 +1,121 @@
+.advantages {
+  background: #ffffff;
+}
+
+.advantages__wrapper {
+  padding: 0 10px 80px;
+}
+
+.advantages__title {
+  margin-bottom: 26px;
+  font-family: "Mont", "Arial", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  color: #1e1e1f;
+  text-align: center;
+}
+
+.advantages__paragraph {
+  margin: 0 auto;
+  max-width: 835px;
+  font-family: "Mont", "Arial", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1e1e1f;
+  text-align: center;
+}
+
+.advantages__list {
+  margin: 55px auto 0;
+  width: 300px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 55px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__item-image {
+  display: inline-block;
+  margin-bottom: 40px;
+  width: 101px;
+  height: 82px;
+  background: red;
+}
+
+.advantages__item-title {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 31px;
+  font-family: "Mont", "Arial", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: #1e1e1f;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 3px;
+    background: #ffeb00;
+    transform: translateX(-50%);
+  }
+}
+
+.advantages__item-paragraph {
+  font-family: "Mont", "Arial", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1e1e1f;
+  text-align: center;
+}
+
+@media @tablet-widths {
+  .advantages__wrapper {
+    margin: 0 auto;
+    padding: 0 0 190px;
+    width: 87%;
+  }
+
+  .advantages__title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 35px auto 0;
+    width: auto;
+  }
+
+  .advantages__item {
+    margin-bottom: 0;
+    width: 30%;
+    max-width: 365px;
+  }
+}
+
+@media @desktop-widths {
+  .advantages__wrapper {
+    width: 83%;
+    min-width: 1170px;
+    max-width: 1480px;
+  }
+}

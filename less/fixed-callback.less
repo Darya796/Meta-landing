@@ -1,0 +1,21 @@
+.fixed-callback {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 55px;
+  height: 55px;
+  background: #ffeb00;
+  transition: 0.3s;
+  cursor: pointer;
+  z-index: 2;
+
+  &:active {
+    background: darken(#ffeb00, 5%);
+  }
+}
+
+@media @tablet-widths {
+  .fixed-callback {
+    display: none;
+  }
+}

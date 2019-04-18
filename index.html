@@ -2,13 +2,617 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Landing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body>
 
+<button class="fixed-callback" type="button"></button>
+
+<header class="page-header">
+    <div class="page-header__wrapper">
+
+        <div class="page-header__logo-container">
+            <img class="page-header__logo-img" src="img/meta-logo.svg" alt="logo">
+
+            <p class="page-header__logo-name">
+                Meta <br>
+                Project
+            </p>
+        </div>
+
+        <a class="page-header__phone" href="tel:+380324564545">+38 (032) 456 45 45</a>
+
+        <button class="page-header__callback" type="button">Перезвоните мне!</button>
+
+    </div>
+</header>
+
+<section class="first-screen">
+    <div class="first-screen__wrapper">
+
+        <div class="first-screen__img-container"></div>
+
+        <div class="first-screen__text-container">
+            <h1 class="first-screen__title">ЛЕНДИНГ за
+                <b class="first-screen__title--bold">5000р.</b>
+                за
+                <b class="first-screen__title--bold">24 часа</b>
+                !</h1>
+
+            <p class="first-screen__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+
+            <div class="first-screen__btns-container">
+                <a class="first-screen__yellow-link" href="#">Заказать</a>
+
+                <a class="first-screen__transparent-link" href="#">Просчитать</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="second-screen">
+    <div class="second-screen__wrapper">
+
+        <div class="second-screen__text-container">
+            <h2 class="second-screen__title"><span class="second-screen__title--crossed">WOW!</span> Полегче! Акция?
+            </h2>
+
+            <p class="second-screen__paragraph">Да, да! Именно так! Не Пропусти и слови птицу удачи за хвост! Мы, <span
+                    class="second-screen__paragraph--underline  second-screen__paragraph--bold">Metaproject</span>,
+                супер-крутая банда специалистов. Которая решила набить портфолио новыми проектами и нам нужен ты! А
+                <span class="second-screen__paragraph--bold">мы нужны тебе!</span>
+                Cайт Дешево, но не топорно? Тебе точно сюда. Почему?
+                Потому что мы устали от приложений, игр, стартапов и тд. <span class="second-screen__paragraph--bold">нам нужен твой сайт</span>,
+                а мы нужны тебе! Спеши, <span class="second-screen__paragraph--bold">время АКЦИИ ограничено!</span></p>
+        </div>
+
+
+        <div class="timer">
+
+            <div id="timer__deadline-message">
+                Time is up!
+            </div>
+
+            <div id="timer__clock" class="timer__time-container">
+
+                <div class="timer__time-section">
+                    <span class="timer__days"></span>
+                    <div class="timer__small-text">дней</div>
+                </div>
+
+                <span class="timer__time-divider">:</span>
+
+                <div class="timer__time-section">
+                    <span class="timer__hours"></span>
+                    <div class="timer__small-text">часов</div>
+                </div>
+
+                <span class="timer__time-divider">:</span>
+
+                <div class="timer__time-section">
+                    <span class="timer__minutes"></span>
+                    <div class="timer__small-text">минут</div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <ul class="second-screen__list">
+            <li class="second-screen__item">
+                <img class="second-screen__item-img" src="" alt="icon">
+
+                <h4 class="second-screen__item-title">Сайт <br>
+                    визитка</h4>
+
+                <p class="second-screen__item-price">от <b class="second-screen__item-price--bold">99.99$</b></p>
+
+                <ul class="second-screen__item-list">
+                    <li class="second-screen__item-check">Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+
+                    <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
+                </ul>
+
+                <a class="second-screen__order-link" href="#">Заказать</a>
+            </li>
+
+            <li class="second-screen__item">
+
+                <span class="second-screen__item-sticker">-50<span
+                        class="second-screen__item-sticker--tiny">%</span></span>
+
+                <img class="second-screen__item-img" src="" alt="icon">
+
+                <h4 class="second-screen__item-title">Продающий <br>
+                    лендинг</h4>
+
+                <p class="second-screen__item-price">от <b class="second-screen__item-price--bold">99.99$</b></p>
+
+                <ul class="second-screen__item-list">
+                    <li class="second-screen__item-check">Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+
+                    <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
+
+                    <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
+                </ul>
+
+                <a class="second-screen__order-link" href="#">Заказать</a>
+            </li>
+
+            <li class="second-screen__item">
+                <img class="second-screen__item-img" src="" alt="icon">
+
+                <h4 class="second-screen__item-title">Сайт <br>
+                    визитка</h4>
+
+                <p class="second-screen__item-price">от <b class="second-screen__item-price--bold">99.99$</b></p>
+
+                <ul class="second-screen__item-list">
+                    <li class="second-screen__item-check">Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+
+                    <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
+                </ul>
+
+                <a class="second-screen__order-link" href="#">Заказать</a>
+            </li>
+
+            <li class="second-screen__item">
+
+                <img class="second-screen__item-img" src="" alt="icon">
+
+                <h4 class="second-screen__item-title">Продающий <br>
+                    лендинг</h4>
+
+                <p class="second-screen__item-price">от <b class="second-screen__item-price--bold">99.99$</b></p>
+
+                <ul class="second-screen__item-list">
+                    <li class="second-screen__item-check">Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+
+                    <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
+
+                    <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
+                </ul>
+
+                <a class="second-screen__order-link" href="#">Заказать</a>
+            </li>
+        </ul>
+
+    </div>
+
+    <section class="portfolio">
+        <div class="portfolio__wrapper">
+            <h2 class="portfolio__title">Наше портфолио</h2>
+
+            <p class="portfolio__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut</p>
+        </div>
+
+        <div class="portfolio__slider-container">
+            <div class="portfolio__slider-item">
+                <img class="portfolio__slider-preview" src="img/travimondo-preview.jpg" alt="preview">
+            </div>
+
+            <div class="portfolio__slider-item">
+                <img class="portfolio__slider-preview" src="img/yours-preview.jpg" alt="preview">
+            </div>
+
+            <div class="portfolio__slider-item">
+                <img class="portfolio__slider-preview" src="img/linux-preview.png" alt="preview">
+            </div>
+
+            <div class="portfolio__slider-item">
+                <img class="portfolio__slider-preview" src="img/spirit-preview.png" alt="preview">
+            </div>
+
+            <div class="portfolio__slider-item">
+                <img class="portfolio__slider-preview" src="img/take-up-preview.png" alt="preview">
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages__wrapper">
+
+            <h2 class="advantages__title">Все еще сомневаешься?</h2>
+
+            <p class="advantages__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <ul class="advantages__list">
+                <li class="advantages__item">
+                    <img class="advantages__item-image" src="" alt="icon">
+
+                    <h4 class="advantages__item-title">Бомба-ракета, <br>
+                        а не дизайн</h4>
+
+                    <p class="advantages__item-paragraph">У нас за плечами много проектов и мы знаем свое дело как
+                        никто!</p>
+                </li>
+
+                <li class="advantages__item">
+                    <img class="advantages__item-image" src="" alt="icon">
+
+                    <h4 class="advantages__item-title">Прокачка <br>
+                        по-полной</h4>
+
+                    <p class="advantages__item-paragraph">Мы всегда на связи, поддержим, расскажем, поможем, научим и
+                        т.д.</p>
+                </li>
+
+                <li class="advantages__item">
+                    <img class="advantages__item-image" src="" alt="icon">
+
+                    <h4 class="advantages__item-title">Все в одном <br>
+                        офисе</h4>
+
+                    <p class="advantages__item-paragraph">Все разработчики в одном офисе, приезжайте в гости!</p>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+</section>
+
+<section class="prices">
+    <div class="prices__wrapper">
+
+        <h2 class="prices__title">Просчитать стоимость
+            СЕЙЧАС?</h2>
+
+        <p class="prices__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut</p>
+
+        <div class="prices__form">
+            <input class="hidden-input  js--prices-input" type="checkbox" name="site-card" data-price="10"
+                   id="site-card" checked>
+            <input class="hidden-input  js--prices-input" type="checkbox" name="landing" data-price="20" id="landing">
+            <input class="hidden-input  js--prices-input" type="checkbox" name="corporate" data-price="30"
+                   id="corporate">
+            <input class="hidden-input  js--prices-input" type="checkbox" name="e-store" data-price="40" id="e-store">
+            <input class="hidden-input  js--prices-input" type="checkbox" name="other" data-price="50" id="other">
+
+
+            <input class="hidden-input  js--prices-input" type="checkbox" name="design" data-price="60" id="design"
+                   checked>
+            <input class="hidden-input  js--prices-input" type="checkbox" name="front-end" data-price="70"
+                   id="front-end">
+            <input class="hidden-input  js--prices-input" type="checkbox" name="back-end" data-price="80"
+                   id="back-end">
+            <input class="hidden-input  js--prices-input" type="checkbox" name="seo" data-price="90" id="seo">
+
+
+            <div class="prices__form-column">
+                <h3 class="prices__form-title">Уже знаете что вам нужно?</h3>
+
+                <p class="prices__form-paragraph">Выберите тип проекта</p>
+
+                <label class="prices__form-label" for="site-card">Сайт - визитка</label>
+                <label class="prices__form-label" for="landing">Продающий лендинг</label>
+                <label class="prices__form-label" for="corporate">Корпоративный сайт</label>
+                <label class="prices__form-label" for="e-store">Интернет магазин</label>
+                <label class="prices__form-label" for="other">Другое</label>
+            </div>
+
+            <div class="prices__form-column">
+                <h3 class="prices__form-title">Обьем работы и все такое?</h3>
+
+                <p class="prices__form-paragraph">Хочу только дизайн? - Легко! <br>
+                    Отметьте то, что вам нужно.</p>
+
+                <label class="prices__form-label" for="design">Дизайн</label>
+                <label class="prices__form-label" for="front-end">Front-End (верстка)</label>
+                <label class="prices__form-label" for="back-end">Back-end (программирование)</label>
+                <label class="prices__form-label" for="seo">SEO и прочие плюшки</label>
+            </div>
+
+            <div class="prices__form-column  prices__form-column--range">
+                <div class="prices__slider-container">
+                    <h3 class="prices__form-title">Знаете масштабы проекта?</h3>
+
+                    <p class="prices__form-paragraph">Укажите примерное количество страниц</p>
+
+                    <div class="prices__pages-container">
+                        <label class="prices__pages-input-title">Количество страниц</label>
+                        <input id="pages-value" class="prices__pages-input" type="text" value="1" data-price="1">
+                    </div>
+
+                    <div id="pages-slider" class="prices__form-range"></div>
+                </div>
+
+                <p class="prices__form-price">Итого:
+                    <span class="prices__form-price-value">$<span class="prices__form-price-number">0</span></span>
+                    <sup class="prices__price-mark">*</sup>
+                </p>
+            </div>
+
+            <div class="prices__price-mark-text-container">
+                <p class="prices__price-mark-text">( Расчет предварительный и грубый, не забывайте о скидках и “А
+                    поговорить?” )</p>
+
+                <a class="prices__submit-order" href="#">Заказать</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="contacts__wrapper">
+        <h2 class="prices__title">Давай звони нам, мы заждались!</h2>
+
+        <p class="prices__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut</p>
+
+        <div class="contacts__info-container">
+
+            <div class="contacts__left-col">
+                <div class="contacts__map-container">
+                    <img src="img/map.jpg" alt="map">
+                </div>
+
+                <p class="contacts__location-icon">Ukraine <br>
+                    Odessa</p>
+
+                <ul class="contacts__list">
+                    <li class="contacts__item">
+                        <p class="contacts__item-title  contacts__item-title--phone">Phone:</p>
+                        <a class="contacts__item-link" href="#">+38 (096) 072-18-11</a>
+                    </li>
+
+                    <li class="contacts__item">
+                        <p class="contacts__item-title">Email:</p>
+                        <a class="contacts__item-link" href="#">sales@metaproject.pro</a>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="contacts__form">
+
+                <h3 class="contacts__form-title">Или весточку мне напиши</h3>
+
+                <div class="contacts__input-container">
+                    <input class="contacts__input" type="text">
+                    <label class="contacts__input-label">Ваше имя: *</label>
+                </div>
+
+                <div class="contacts__input-container">
+                    <input class="contacts__input" type="text">
+                    <label class="contacts__input-label">Ваш email или телефон: *</label>
+                </div>
+
+                <div class="contacts__textarea-container">
+                    <label class="contacts__textarea-label">И пару слов :</label>
+                    <textarea class="contacts__textarea" rows="4"></textarea>
+                </div>
+
+                <button class="prices__submit-order  contacts__form-submit" type="button">Отправить</button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+    $(function () {        /*==============================================================================================*/
+        $('.page-header__phone').attr("data-hrefTel", $('.page-header__phone').attr("href"));
+        var phone_href = $('.page-header__phone').attr("data-hrefTel");
+
+        var phones_href_changing = function () {
+            if ($(window).outerWidth() > 767) {
+                $('.page-header__phone').removeAttr("href");
+            } else {
+                $('.page-header__phone').attr("href", phone_href);
+            }
+        };
+
+        $(window).on("load, resize", function () {
+            phones_href_changing();
+        });
+
+        phones_href_changing();
+
+
+        $('.portfolio__slider-container:not(.slick-initialized)').slick({
+            mobileFirst: true,
+            touchThreshold: 10,
+            infinite: true,
+            edgeFriction: 0.05,
+            centerMode: true,
+            dots: true,
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 0,
+                    settings: {
+                        centerPadding: "40px"
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        centerPadding: "80px"
+                    }
+                },
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        centerPadding: "220px"
+                    }
+                }
+            ]
+        });
+
+        /*==================================*/
+
+
+        var checkboxes = $(".js--prices-input");
+
+        var total_price = $(".prices__form-price-number");
+
+        var total_price_number = parseInt(total_price.html());
+
+        var pages_value = $("#pages-value");
+
+        var price_count = 0;
+        var price__change_count = 1;
+
+        var counter = function() {
+            price_count = 0;
+
+            console.log("-------------------------------------------\n");
+            jQuery.each(checkboxes, function () {
+
+                if ($(this).attr('checked')) {
+                    console.log($(this).data("price"));
+                    price_count += parseInt($(this).data("price"));
+                }
+            });
+
+
+            price_count += pages_value.data("price") * (parseInt(pages_value.val()));
+            console.log(pages_value.data("price") * (parseInt(pages_value.val())));
+            console.log(price_count);
+            total_price.html(price_count);
+            return price_count;
+        };
+
+
+
+        counter();
+
+        /*==================================*/
+
+        $("#pages-slider").slider({
+            animate: "fast",
+            max: 60,
+            min: 1,
+            stop: function (event, ui) {
+                $("#pages-value").val($("#pages-slider").slider("option", "value"));
+
+                // price__change_count = pages_value.data("price") * (parseInt(pages_value.val()));
+                // console.log(price__change_count);
+                // console.log(price_count + price__change_count);
+            },
+            slide: function (event, ui) {
+                $("#pages-value").val($("#pages-slider").slider("option", "value"));
+            }
+        });
+
+        pages_value.change(function () {
+            var value1 = $("#pages-value").val();
+
+            if (value1 < 61) {
+                $("#pages-slider").slider("value", value1);
+            } else {
+                $("#pages-value").val(60);
+                $("#pages-slider").slider("value", 60);
+            }
+
+            // price__change_count = pages_value.data("price") * (parseInt(pages_value.val()));
+            // console.log(price__change_count);
+            // console.log(price_count + price__change_count);
+
+        });
+
+        // фильтрация ввода в поля
+        $("#pages-value").on("keypress", function (event) {
+            var key, keyChar;
+            if (!event) {
+                var event = window.event;
+            }
+
+            if (event.keyCode) {
+                key = event.keyCode;
+            } else if (event.which) {
+                key = event.which;
+            }
+
+            if (key == null || key == 0 || key == 8 || key == 13 || key == 9 || key == 46 || key == 37 || key == 39) {
+                return true;
+            }
+            keyChar = String.fromCharCode(key);
+
+            if (!/\d/.test(keyChar)) {
+                return false;
+            }
+
+        });
+
+
+
+
+
+        // console.log(price_count);
+        checkboxes.on("click", function () {
+            if($(this).attr('checked')) {
+                $(this).attr('checked', false);
+            }
+            else {
+                $(this).attr('checked', true);
+            }
+
+            counter();
+
+        });
+    });
+</script>
+<script>
+    /*===========timer==================*/
+    function getTimeRemaining(endtime) {
+        var t = Date.parse(endtime) - Date.parse(new Date());
+        var minutes = Math.floor((t / 1000 / 60) % 60);
+        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+        var days = Math.floor(t / (1000 * 60 * 60 * 24));
+        return {
+            total: t,
+            days: days,
+            hours: hours,
+            minutes: minutes
+        };
+    }
+
+    function initializeClock(id, endtime) {
+        var clock = document.getElementById(id);
+        var daysSpan = clock.querySelector(".timer__days");
+        var hoursSpan = clock.querySelector(".timer__hours");
+        var minutesSpan = clock.querySelector(".timer__minutes");
+
+        function updateClock() {
+            var t = getTimeRemaining(endtime);
+
+            if (t.total <= 0) {
+                clearInterval(timeinterval);
+                var deadline = new Date(Date.parse(new Date()) + 5 * 1000);
+                initializeClock('timer__clock', deadline);
+            }
+
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
+            minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
+        }
+
+        updateClock();
+        var timeinterval = setInterval(updateClock, 1000);
+    }
+
+    var deadline = "June 31 2019 00:00:00";
+    initializeClock("timer__clock", deadline);
+</script>
 </body>
 </html>

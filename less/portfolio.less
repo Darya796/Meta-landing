@@ -1,0 +1,137 @@
+.portfolio {
+  margin-top: -95px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.portfolio__wrapper {
+  position: relative;
+  //margin-bottom: 30px;
+  padding: 0 10px 30px;
+
+  &::before {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   width: 42px;
+   height: 10px;
+   background: red;
+    transform: translateX(-50%);
+  }
+}
+
+.portfolio__title {
+  margin-bottom: 25px;
+  font-family: "Mont", "Arial", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 0.5px;
+  color: #1e1e1f;
+  text-align: center;
+}
+
+.portfolio__paragraph {
+  font-family: "Mont", "Arial", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1e1e1f;
+  text-align: center;
+}
+
+.portfolio__slider-container {
+  margin: 30px auto 160px;
+  width: 320px;
+  //width: 100%;
+  height: 202px;
+  //background: red;
+}
+
+.portfolio__slider-item {
+  margin: 0 10px;
+  //width: 220px !important;
+  height: 202px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.portfolio__slider-preview {
+  height: 100%;
+  max-height: 100%;
+  transition: 0.3s;
+}
+
+.slick-current.slick-active.slick-center {
+  opacity: 1;
+}
+
+.slick-list.draggable {
+  overflow: visible;
+}
+
+@media @tablet-widths {
+  .portfolio {
+    margin-top: -170px;
+  }
+
+  .portfolio__wrapper {
+    margin: 0 auto;
+    padding: 105px 0 45px;
+    width: 87%;
+
+    &::before {
+      width: 75px;
+      height: 12px;
+    }
+  }
+
+  .portfolio__title {
+    font-size: 50px;
+  }
+
+  .portfolio__paragraph {
+    font-family: "Mont", "Arial", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1e1e1f;
+    text-align: center;
+  }
+
+  .portfolio__slider-container {
+    margin: 70px auto 160px;
+    width: 660px;
+    height: 455px;
+  }
+
+  .portfolio__slider-item {
+    margin: 25px 30px;
+    height: 410px;
+    opacity: 1;
+  }
+
+  .slick-current.slick-active.slick-center {
+    margin: 0 30px;
+    height: 455px;
+    opacity: 1;
+  }
+}
+
+@media @desktop-widths {
+  .portfolio {
+    margin-top: -100px;
+  }
+  .portfolio__wrapper {
+    width: 83%;
+    max-width: 841px;
+  }
+
+  .portfolio__slider-container {
+    margin: 70px auto 165px;
+    width: 992px;
+  }
+}

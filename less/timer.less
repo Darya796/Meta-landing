@@ -1,0 +1,112 @@
+.timer {
+  margin: 0 auto 95px;
+  padding: 28px 55px 30px 14px;
+  width: 300px;
+  height: 151px;
+  background: rgba(255, 0, 0, 0.3);
+}
+
+#timer__deadline-message {
+  display: none;
+  font-size: 24px;
+}
+
+#timer__deadline-message.visible {
+  display: block;
+}
+
+#timer__clock.hidden {
+  display: none;
+}
+
+.timer__time-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 14px 10px 18px;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.timer__time-section {
+  width: 30%;
+  text-align: center;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.timer__days,
+.timer__hours,
+.timer__minutes {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: "Digital", "Arial", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.timer__small-text {
+  font-family: "Mont", "Arial", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.timer__time-divider {
+  width: 25px;
+  font-family: "Digital", "Arial", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 37px;
+  text-align: center;
+
+  background: rgba(255, 0, 0, 0.2);
+}
+
+@media @tablet-widths {
+  .timer {
+    margin-bottom: 100px;
+    padding: 58px 100px 60px 30px;
+    width: 534px;
+    height: 280px;
+  }
+
+  .timer__time-container {
+    padding: 24px 15px 18px;
+  }
+
+  .timer__time-section {
+  }
+
+  .timer__days,
+  .timer__hours,
+  .timer__minutes {
+    margin-bottom: 15px;
+    font-size: 98px;
+  }
+
+  .timer__small-text {
+    font-size: 18px;
+  }
+
+  .timer__time-divider {
+    width: 45px;
+    font-size: 98px;
+    line-height: 65px;
+  }
+}
+
+
+
+
+
+
+
+
+@media @desktop-widths {
+  .timer {
+    margin-bottom: 0;
+  }
+}

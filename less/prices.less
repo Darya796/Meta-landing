@@ -101,20 +101,31 @@
 #design:checked ~ .prices__form-column label[for="design"],
 #front-end:checked ~ .prices__form-column label[for="front-end"],
 #back-end:checked ~ .prices__form-column label[for="back-end"],
-#seo:checked ~ .prices__form-column label[for="seo"] {
+#seo:checked ~ .prices__form-column label[for="seo"],
+#pages-accept:checked ~ .prices__form-column--range label[for="pages-accept"] {
   &::before,
   &::after {
     opacity: 1;
   }
 }
 
+#pages-accept:checked ~ .prices__form-column--range .prices__pages-container,
+#pages-accept:checked ~ .prices__form-column--range .prices__form-range {
+  opacity: 1;
+  pointer-events: auto;
+  user-select: auto;
+}
+
 .prices__pages-container {
   display: flex;
   align-items: baseline;
   margin: 25px 0 35px;
+  transition: 0.3s;
+  opacity: 0.3;
+  pointer-events: none;
+  user-select: none;
 }
 
-.prices__pages-input-title,
 .prices__pages-input {
   font-family: "Mont", "Arial", Arial, sans-serif;
   font-weight: 600;
@@ -125,6 +136,11 @@
 
 .prices__pages-input-title {
   flex-shrink: 0;
+  font-family: "Mont", "Arial", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #1e1e1f;
 }
 
 .prices__pages-input {
@@ -144,6 +160,10 @@
   height: 1px;
   background: #000000;
   border: none;
+  transition: 0.3s;
+  opacity: 0.3;
+  pointer-events: none;
+  user-select: none;
 }
 
 .ui-slider-handle.ui-corner-all.ui-state-default {
@@ -188,6 +208,10 @@
     background: #ffeb00;
     transform: translateY(-50%);
     z-index: -1;
+  }
+
+  &--string {
+    display: none;
   }
 }
 

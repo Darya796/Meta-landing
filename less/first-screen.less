@@ -1,4 +1,30 @@
 .first-screen {
+  position: relative;
+  z-index: 2;
+
+  &::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url("../img/first-white.png") no-repeat top center;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/first-yellow.png") no-repeat top center;
+    background-size: cover;
+    z-index: -1;
+  }
 }
 
 .first-screen__wrapper {
@@ -60,9 +86,13 @@
   margin-right: 25px;
   padding: 15px 0;
   background: #ffeb00;
+  box-shadow: 0 10px 10px rgba(255, 235, 0, 0.2);
+  transition: 0.3s;
+  cursor: pointer;
 
   &:active {
     background: darken(#ffeb00, 5%);
+    box-shadow: none;
   }
 }
 
@@ -91,7 +121,8 @@
     display: inline-block;
     width: 30vw;
     height: 30vw;
-    background: red;
+    background: url("../img/computer.svg") no-repeat center;
+    background-size: contain;
     animation: levitate 2.5s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -176,6 +207,7 @@
 
     &:hover {
       background: darken(#ffeb00, 5%);
+      box-shadow: none;
     }
   }
 

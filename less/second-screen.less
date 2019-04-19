@@ -2,6 +2,41 @@
   position: relative;
   z-index: 1;
 
+  //&::before {
+  //  content: "";
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  width: 100%;
+  //  height: 64%;
+  //  background: linear-gradient(to bottom, #ffffff, #e8e8e8);
+  //  z-index: -1;
+  //}
+  //
+  //&::after {
+  //  content: "";
+  //  position: absolute;
+  //  top: 61%;
+  //  left: 0;
+  //  width: 100%;
+  //  height: 143px;
+  //  background: url("../img/wave-w.png") no-repeat bottom left;
+  //  background-size: contain;
+  //  //z-index: 1;
+  //}
+}
+
+.second-screen__pseudo-decorate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  //background: url("../img/wave-y.png") no-repeat center top;
+  //background-size: contain;
+  //transform: rotateY(180deg);
+  //z-index: -1;
+
   &::before {
     content: "";
     position: absolute;
@@ -9,16 +44,30 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-    z-index: -1;
+    background: url("../img/second-white.png") no-repeat center bottom;
+    background-size: 100%;
+    //z-index: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/second-yellow.png") no-repeat center 70%;
+    background-size: 100%;
   }
 }
 
 .second-screen__wrapper {
+  position: relative;
   margin: 0 auto;
   padding: 0 10px 185px;
   min-width: 320px;
   width: 80%;
+  z-index: 2;
 }
 
 .second-screen__text-container {
@@ -130,7 +179,7 @@
   margin-bottom: 25px;
   width: 120px;
   height: 125px;
-  background: red;
+  //background: red;
 }
 
 .second-screen__item-title {
@@ -215,16 +264,38 @@
   transition: 0.3s;
   cursor: pointer;
   background: #ffeb00;
+  box-shadow: 0 10px 10px rgba(255, 235, 0, 0.2);
 
   &:active {
     background: darken(#ffeb00, 5%);
+    box-shadow: none;
   }
 }
 
 @media @tablet-widths {
   .second-screen {
     &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 49%;
       background: linear-gradient(to bottom, #ffffff, #e8e8e8);
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 45%;
+      left: 0;
+      width: 100%;
+      height: 130px;
+      //height: 143px;
+      background: url("../img/wave-w.png") no-repeat top left;
+      background-size: contain;
+      //z-index: 1;
     }
   }
 
@@ -333,10 +404,11 @@
     border-radius: 5px;
     transition: 0.3s;
     cursor: pointer;
-    background: #ffeb00;
+    //background: #ffeb00;
 
     &:active {
       background: darken(#ffeb00, 5%);
+      box-shadow: none;
     }
   }
 }
@@ -344,6 +416,12 @@
 @media @desktop-widths {
   .second-screen {
     overflow-x: hidden;
+
+    &::after {
+      top: 31%;
+      height: 145px;
+      background-size: 100vw;
+    }
   }
 
   .second-screen__wrapper {
@@ -357,7 +435,7 @@
     min-width: 1170px;
     max-width: 1480px;
     height: 1030px;
-    z-index: 1;
+    //z-index: 1;
   }
 
   .second-screen__text-container {
@@ -427,6 +505,7 @@
 
     &:hover {
       background: darken(#ffeb00, 5%);
+      box-shadow: none;
     }
   }
 }

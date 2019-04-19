@@ -49,7 +49,7 @@
             <div class="first-screen__btns-container">
                 <a class="first-screen__yellow-link" href="#">Заказать</a>
 
-                <a class="first-screen__transparent-link" href="#">Просчитать</a>
+                <a class="first-screen__transparent-link  js--scroll" href="#prices-form">Просчитать</a>
             </div>
         </div>
 
@@ -57,6 +57,9 @@
 </section>
 
 <section class="second-screen">
+
+    <span class="second-screen__pseudo-decorate"></span>
+
     <div class="second-screen__wrapper">
 
         <div class="second-screen__text-container">
@@ -106,7 +109,7 @@
 
         <ul class="second-screen__list">
             <li class="second-screen__item">
-                <img class="second-screen__item-img" src="" alt="icon">
+                <img class="second-screen__item-img" src="img/icon-1.svg" alt="icon">
 
                 <h4 class="second-screen__item-title">Сайт <br>
                     визитка</h4>
@@ -127,7 +130,7 @@
                 <span class="second-screen__item-sticker">-50<span
                         class="second-screen__item-sticker--tiny">%</span></span>
 
-                <img class="second-screen__item-img" src="" alt="icon">
+                <img class="second-screen__item-img" src="img/icon-2.svg" alt="icon">
 
                 <h4 class="second-screen__item-title">Продающий <br>
                     лендинг</h4>
@@ -146,7 +149,7 @@
             </li>
 
             <li class="second-screen__item">
-                <img class="second-screen__item-img" src="" alt="icon">
+                <img class="second-screen__item-img" src="img/icon-3.svg" alt="icon">
 
                 <h4 class="second-screen__item-title">Сайт <br>
                     визитка</h4>
@@ -164,7 +167,7 @@
 
             <li class="second-screen__item">
 
-                <img class="second-screen__item-img" src="" alt="icon">
+                <img class="second-screen__item-img" src="img/icon-4.svg" alt="icon">
 
                 <h4 class="second-screen__item-title">Продающий <br>
                     лендинг</h4>
@@ -184,6 +187,9 @@
         </ul>
 
     </div>
+
+
+    <!--<span class="portfolio__pseudo-decorate"></span>-->
 
     <section class="portfolio">
         <div class="portfolio__wrapper">
@@ -227,7 +233,7 @@
 
             <ul class="advantages__list">
                 <li class="advantages__item">
-                    <img class="advantages__item-image" src="" alt="icon">
+                    <img class="advantages__item-image" src="img/icon-5.svg" alt="icon">
 
                     <h4 class="advantages__item-title">Бомба-ракета, <br>
                         а не дизайн</h4>
@@ -237,7 +243,7 @@
                 </li>
 
                 <li class="advantages__item">
-                    <img class="advantages__item-image" src="" alt="icon">
+                    <img class="advantages__item-image" src="img/icon-6.svg" alt="icon">
 
                     <h4 class="advantages__item-title">Прокачка <br>
                         по-полной</h4>
@@ -247,7 +253,7 @@
                 </li>
 
                 <li class="advantages__item">
-                    <img class="advantages__item-image" src="" alt="icon">
+                    <img class="advantages__item-image" src="img/icon-7.svg" alt="icon">
 
                     <h4 class="advantages__item-title">Все в одном <br>
                         офисе</h4>
@@ -261,7 +267,12 @@
 </section>
 
 <section class="prices">
+
+    <span class="prices__pseudo-decorate"></span>
+
     <div class="prices__wrapper">
+
+        <a id="prices-form"></a>
 
         <h2 class="prices__title">Просчитать стоимость
             СЕЙЧАС?</h2>
@@ -289,9 +300,9 @@
             <input class="hidden-input  js--prices-input" type="checkbox" name="back-end" data-site-card="100"
                    data-landing="100" data-corporate="200" data-e-store="300"
                    id="back-end">
-            <input class="hidden-input  js--prices-input" type="checkbox" name="seo" data-site-card="300"
-                   data-landing="300"
-                   data-corporate="300" data-e-store="300" id="seo">
+            <input class="hidden-input  js--prices-input" type="checkbox" name="seo" data-site-card="0"
+                   data-landing="0"
+                   data-corporate="0" data-e-store="0" id="seo">
 
 
             <input class="hidden-input" type="checkbox" name="slider-section" id="pages-accept">
@@ -374,12 +385,12 @@
                 <ul class="contacts__list">
                     <li class="contacts__item">
                         <p class="contacts__item-title  contacts__item-title--phone">Phone:</p>
-                        <a class="contacts__item-link" href="#">+38 (096) 072-18-11</a>
+                        <a class="contacts__item-link  contacts__item-link--phone" href="tel:+380960721811">+38 (096) 072-18-11</a>
                     </li>
 
                     <li class="contacts__item">
                         <p class="contacts__item-title">Email:</p>
-                        <a class="contacts__item-link" href="#">sales@metaproject.pro</a>
+                        <a class="contacts__item-link" href="mailto: sales@metaproject.pro">sales@metaproject.pro</a>
                     </li>
                 </ul>
             </div>
@@ -389,12 +400,12 @@
                 <h3 class="contacts__form-title">Или весточку мне напиши</h3>
 
                 <div class="contacts__input-container">
-                    <input class="contacts__input" type="text">
+                    <input class="contacts__input" type="text" required pattern="\S+"/>
                     <label class="contacts__input-label">Ваше имя: *</label>
                 </div>
 
                 <div class="contacts__input-container">
-                    <input class="contacts__input" type="text">
+                    <input class="contacts__input" type="text" required pattern="\S+"/>
                     <label class="contacts__input-label">Ваш email или телефон: *</label>
                 </div>
 
@@ -403,11 +414,24 @@
                     <textarea class="contacts__textarea" rows="4"></textarea>
                 </div>
 
-                <button class="prices__submit-order  contacts__form-submit" type="button">Отправить</button>
+                <button class="prices__submit-order  contacts__form-submit" type="submit">Отправить</button>
 
             </form>
 
         </div>
+
+        <footer class="page-footer">
+            <div class="page-footer__wrapper">
+                <p class="page-footer__copyrights"> 2013-2018 All rights reserved.</p>
+
+                <div class="page-footer__social-container">
+                    <a class="page-footer__social-link  page-footer__social-link--inst" href="#"></a>
+                    <a class="page-footer__social-link  page-footer__social-link--fb" href="#"></a>
+                    <a class="page-footer__social-link  page-footer__social-link--behance" href="#"></a>
+                    <a class="page-footer__social-link  page-footer__social-link--dribble" href="#"></a>
+                </div>
+            </div>
+        </footer>
 
     </div>
 </section>
@@ -416,7 +440,40 @@
 <script src="js/slick.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script>
-    $(function () {        /*==============================================================================================*/
+    $(function () { /*==============================================================================================*/
+        $('.contacts__item-link--phone').attr("data-hrefTel", $('.contacts__item-link--phone').attr("href"));
+        $('.page-header__phone').attr("data-hrefTel", $('.page-header__phone').attr("href"));
+
+        var phone_href = $('.contacts__item-link--phone').attr("data-hrefTel");
+        var header_phone_href = $('.page-header__phone').attr("data-hrefTel");
+
+        var phones_href_changing = function () {
+            if ($(window).outerWidth() > 767) {
+                $('.contacts__item-link--phone').removeAttr("href");
+                $('.page-header__phone').removeAttr("href");
+            } else {
+                $('.contacts__item-link--phone').attr("href", phone_href);
+                $('.page-header__phone').attr("href", header_phone_href);
+            }
+        };
+
+        $(window).on("load, resize", function () {
+            phones_href_changing();
+        });
+
+        phones_href_changing();
+        /*==============================================================================================*/
+        $(document).on("click", ".js--scroll", function (event) {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+            //забираем идентификатор бока с атрибута href
+            var id = $(this).attr('href'),
+                //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
+            //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top}, 800);
+        });
+        /*==============================================================================================*/
         $('.page-header__phone').attr("data-hrefTel", $('.page-header__phone').attr("href"));
         var phone_href = $('.page-header__phone').attr("data-hrefTel");
 

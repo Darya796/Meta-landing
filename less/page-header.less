@@ -1,5 +1,20 @@
 .page-header {
-  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 65vw;
+    height: 65vw;
+    max-width: 322px;
+    max-height: 246px;
+    background: url("../img/squares.png") no-repeat left top;
+    background-size: cover;
+    z-index: -1;
+  }
 }
 
 .page-header__wrapper {
@@ -48,7 +63,8 @@
     left: 0;
     width: 15px;
     height: 15px;
-    background: red;
+    background: url("../img/phone.svg") no-repeat center top;
+    background-size: 13px;
   }
 
   &:active {
@@ -62,6 +78,12 @@
 
 @media @tablet-widths {
   .page-header {
+    &::before {
+      width: 60vw;
+      height: 60vw;
+      max-width: none;
+      max-height: none;
+    }
   }
 
   .page-header__wrapper {
@@ -122,17 +144,27 @@
       z-index: -1;
     }
 
-    &:active {
-      padding: 0 20px;
-    }
+    //&:active {
+    //  padding: 0 20px;
+    //}
 
     &:active::before {
-      width: 100%;
+      width: 75px;
     }
   }
 }
 
 @media @desktop-widths {
+  .page-header {
+
+    &::before {
+      width: 70vw;
+      height: 70vw;
+      max-width: 910px;
+      max-height: 875px;
+    }
+  }
+
   .page-header__wrapper {
     width: 83%;
     min-width: 1170px;
@@ -155,12 +187,14 @@
   .page-header__callback {
     margin-left: 55px;
 
-    &:hover {
-      padding: 0 20px;
-    }
+    //&:hover {
+    //padding: 0 20px;
+    //}
 
     &:hover::before {
-      width: 100%;
+      //left: 0;
+      //width: 100%;
+      width: 75px;
     }
   }
 }

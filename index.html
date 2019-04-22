@@ -26,7 +26,7 @@
 
         <a class="page-header__phone" href="tel:+380324564545">+38 (032) 456 45 45</a>
 
-        <button class="page-header__callback" type="button">Перезвоните мне!</button>
+        <a class="page-header__callback  js--scroll" href="#contacts-form">Перезвоните мне!</a>
 
     </div>
 </header>
@@ -47,7 +47,7 @@
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
 
             <div class="first-screen__btns-container">
-                <a class="first-screen__yellow-link" href="#">Заказать</a>
+                <a class="first-screen__yellow-link  js--scroll" href="#contacts-form">Заказать</a>
 
                 <a class="first-screen__transparent-link  js--scroll" href="#prices-form">Просчитать</a>
             </div>
@@ -109,6 +109,8 @@
 
         <ul class="second-screen__list">
             <li class="second-screen__item">
+                <a class="second-screen__hidden-link  popup__form-link" href="#"></a>
+
                 <img class="second-screen__item-img" src="img/icon-1.svg" alt="icon">
 
                 <h4 class="second-screen__item-title">Сайт <br>
@@ -122,10 +124,11 @@
                     <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
                 </ul>
 
-                <a class="second-screen__order-link" href="#">Заказать</a>
+                <a class="second-screen__order-link  popup__form-link" href="#">Заказать</a>
             </li>
 
             <li class="second-screen__item">
+                <a class="second-screen__hidden-link  popup__form-link" href="#"></a>
 
                 <span class="second-screen__item-sticker">-50<span
                         class="second-screen__item-sticker--tiny">%</span></span>
@@ -145,14 +148,16 @@
                     <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
                 </ul>
 
-                <a class="second-screen__order-link" href="#">Заказать</a>
+                <a class="second-screen__order-link  popup__form-link" href="#">Заказать</a>
             </li>
 
             <li class="second-screen__item">
+                <a class="second-screen__hidden-link  popup__form-link" href="#"></a>
+
                 <img class="second-screen__item-img" src="img/icon-3.svg" alt="icon">
 
-                <h4 class="second-screen__item-title">Сайт <br>
-                    визитка</h4>
+                <h4 class="second-screen__item-title">Корпоративный <br>
+                    сайт</h4>
 
                 <p class="second-screen__item-price">от <b class="second-screen__item-price--bold">99.99$</b></p>
 
@@ -162,15 +167,16 @@
                     <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
                 </ul>
 
-                <a class="second-screen__order-link" href="#">Заказать</a>
+                <a class="second-screen__order-link  popup__form-link" href="#">Заказать</a>
             </li>
 
             <li class="second-screen__item">
+                <a class="second-screen__hidden-link  popup__form-link" href="#"></a>
 
                 <img class="second-screen__item-img" src="img/icon-4.svg" alt="icon">
 
-                <h4 class="second-screen__item-title">Продающий <br>
-                    лендинг</h4>
+                <h4 class="second-screen__item-title">Онлайн <br>
+                    магазин</h4>
 
                 <p class="second-screen__item-price">от <b class="second-screen__item-price--bold">99.99$</b></p>
 
@@ -182,7 +188,7 @@
                     <li class="second-screen__item-check">Ut labore et dolore magna aliqua</li>
                 </ul>
 
-                <a class="second-screen__order-link" href="#">Заказать</a>
+                <a class="second-screen__order-link  popup__form-link" href="#">Заказать</a>
             </li>
         </ul>
 
@@ -200,25 +206,27 @@
                 ullamco laboris nisi ut</p>
         </div>
 
-        <div class="portfolio__slider-container">
-            <div class="portfolio__slider-item">
-                <img class="portfolio__slider-preview" src="img/travimondo-preview.jpg" alt="preview">
-            </div>
+        <div class="portfolio__slider-arrows-container">
+            <div class="portfolio__slider-container">
+                <div class="portfolio__slider-item">
+                    <img class="portfolio__slider-preview" src="img/travimondo-preview.jpg" alt="preview" data-src="img/travimondo-full.png">
+                </div>
 
-            <div class="portfolio__slider-item">
-                <img class="portfolio__slider-preview" src="img/yours-preview.jpg" alt="preview">
-            </div>
+                <div class="portfolio__slider-item">
+                    <img class="portfolio__slider-preview" src="img/yours-preview.jpg" alt="preview" data-src="img/yours-full.jpg">
+                </div>
 
-            <div class="portfolio__slider-item">
-                <img class="portfolio__slider-preview" src="img/linux-preview.png" alt="preview">
-            </div>
+                <div class="portfolio__slider-item">
+                    <img class="portfolio__slider-preview" src="img/linux-preview.png" alt="preview" data-src="img/linux-full.jpg">
+                </div>
 
-            <div class="portfolio__slider-item">
-                <img class="portfolio__slider-preview" src="img/spirit-preview.png" alt="preview">
-            </div>
+                <div class="portfolio__slider-item">
+                    <img class="portfolio__slider-preview" src="img/spirit-preview.png" alt="preview" data-src="img/spirit-full.jpg">
+                </div>
 
-            <div class="portfolio__slider-item">
-                <img class="portfolio__slider-preview" src="img/take-up-preview.png" alt="preview">
+                <div class="portfolio__slider-item">
+                    <img class="portfolio__slider-preview" src="img/take-up-preview.png" alt="preview" data-src="img/take-up-full.png">
+                </div>
             </div>
         </div>
     </section>
@@ -305,9 +313,6 @@
                    data-corporate="0" data-e-store="0" id="seo">
 
 
-            <input class="hidden-input" type="checkbox" name="slider-section" id="pages-accept">
-
-
             <div class="prices__form-column">
                 <h3 class="prices__form-title">Уже знаете что вам нужно?</h3>
 
@@ -336,12 +341,17 @@
                 <div class="prices__slider-container">
                     <h3 class="prices__form-title">Знаете масштабы проекта?</h3>
 
-                    <label class="prices__form-label" for="pages-accept">Указать примерное количество страниц</label>
-
                     <div class="prices__pages-container">
-                        <label class="prices__pages-input-title">Количество страниц</label>
+                        <p class="prices__form-paragraph">Укажите примерное количество страниц</p>
+
                         <input id="pages-value" class="prices__pages-input" type="text" value="1" data-price="1">
                     </div>
+
+
+                    <!--<div class="prices__pages-container">-->
+                        <!--<label class="prices__pages-input-title">Количество страниц</label>-->
+                        <!--<input id="pages-value" class="prices__pages-input" type="text" value="1" data-price="1">-->
+                    <!--</div>-->
 
                     <div id="pages-slider" class="prices__form-range"></div>
                 </div>
@@ -357,7 +367,7 @@
                 <p class="prices__price-mark-text">( Расчет предварительный и грубый, не забывайте о скидках и “А
                     поговорить?” )</p>
 
-                <a class="prices__submit-order" href="#">Заказать</a>
+                <a class="prices__submit-order  popup__form-link" href="#">Заказать</a>
             </div>
         </div>
 
@@ -396,6 +406,8 @@
             </div>
 
             <form class="contacts__form">
+
+                <a id="contacts-form"></a>
 
                 <h3 class="contacts__form-title">Или весточку мне напиши</h3>
 
@@ -436,449 +448,34 @@
     </div>
 </section>
 
+
+<section class="popup">
+
+<div class="popup__form-wrapper">
+
+    <div class="popup__form">
+        <div class="contacts__input-container">
+            <input class="contacts__input" type="text" required pattern="\S+"/>
+            <label class="contacts__input-label">Ваше имя: *</label>
+        </div>
+
+        <div class="contacts__input-container">
+            <input class="contacts__input" type="text" required pattern="\S+"/>
+            <label class="contacts__input-label">Ваш email или телефон: *</label>
+        </div>
+
+        <button class="prices__submit-order  popup__submit" type="button">Отправить</button>
+    </div>
+
+
+    <button class="popup__close" type="button">Закрыть</button>
+</div>
+
+</section>
+
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
-<script>
-    $(function () { /*==============================================================================================*/
-        $('.contacts__item-link--phone').attr("data-hrefTel", $('.contacts__item-link--phone').attr("href"));
-        $('.page-header__phone').attr("data-hrefTel", $('.page-header__phone').attr("href"));
-
-        var phone_href = $('.contacts__item-link--phone').attr("data-hrefTel");
-        var header_phone_href = $('.page-header__phone').attr("data-hrefTel");
-
-        var phones_href_changing = function () {
-            if ($(window).outerWidth() > 767) {
-                $('.contacts__item-link--phone').removeAttr("href");
-                $('.page-header__phone').removeAttr("href");
-            } else {
-                $('.contacts__item-link--phone').attr("href", phone_href);
-                $('.page-header__phone').attr("href", header_phone_href);
-            }
-        };
-
-        $(window).on("load, resize", function () {
-            phones_href_changing();
-        });
-
-        phones_href_changing();
-        /*==============================================================================================*/
-        $(document).on("click", ".js--scroll", function (event) {
-            //отменяем стандартную обработку нажатия по ссылке
-            event.preventDefault();
-            //забираем идентификатор бока с атрибута href
-            var id = $(this).attr('href'),
-                //узнаем высоту от начала страницы до блока на который ссылается якорь
-                top = $(id).offset().top;
-            //анимируем переход на расстояние - top за 1500 мс
-            $('body,html').animate({scrollTop: top}, 800);
-        });
-        /*==============================================================================================*/
-        $('.page-header__phone').attr("data-hrefTel", $('.page-header__phone').attr("href"));
-        var phone_href = $('.page-header__phone').attr("data-hrefTel");
-
-        var phones_href_changing = function () {
-            if ($(window).outerWidth() > 767) {
-                $('.page-header__phone').removeAttr("href");
-            } else {
-                $('.page-header__phone').attr("href", phone_href);
-            }
-        };
-
-        $(window).on("load, resize", function () {
-            phones_href_changing();
-        });
-
-        phones_href_changing();
-
-
-        $('.portfolio__slider-container:not(.slick-initialized)').slick({
-            mobileFirst: true,
-            touchThreshold: 10,
-            infinite: true,
-            edgeFriction: 0.05,
-            centerMode: true,
-            dots: true,
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 0,
-                    settings: {
-                        centerPadding: "40px"
-                    }
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        centerPadding: "80px"
-                    }
-                },
-                {
-                    breakpoint: 1199,
-                    settings: {
-                        centerPadding: "220px"
-                    }
-                }
-            ]
-        });
-
-        /*==================================*/
-
-
-        // var checkboxes = $(".js--prices-input");
-        // var pages_accepting = $("#pages-accept");
-
-        // var total_price = $(".prices__form-price-number");
-        // var total_price_number = parseInt(total_price.html());
-        // var total_price_all = 0;
-        // var total_price_checkboxes = 0;
-        // var total_price_pages = 0;
-
-        var pages_value = $("#pages-value");
-
-        // var counter = function() {
-        //     total_price_checkboxes = 0;
-        //
-        //     jQuery.each($(".js--prices-input"), function () {
-        //
-        //         if ($(this).attr('checked')) {
-        //             // console.log($(this).data("price"));
-        //             total_price_checkboxes += parseInt($(this).data("price"));
-        //         }
-        //     });
-        //
-        //     // return total_price_checkboxes;
-        //     total_price.html(total_price_checkboxes);
-        // };
-        //
-        // counter();
-        /*==================================*/
-
-        // var pages_counter = function (pages_number) {
-        //     var number1 = pages_number;
-        //
-        //     if (number1 => 1 && number1 <= 10) {
-        //         total_price_pages = 100;
-        //     } else if (number1 > 10 && number1 <= 20) {
-        //         total_price_pages = 150;
-        //     } else if (number1 > 20 && number1 <= 30) {
-        //         total_price_pages = 200;
-        //     } else if (number1 > 30 && number1 <= 40) {
-        //         total_price_pages = 300;
-        //     } else if (number1 > 40 && number1 <= 50) {
-        //         total_price_pages = 400;
-        //     } else if (number1 > 50 && number1 <= 60) {
-        //         total_price_pages = 500;
-        //     }
-        //     else {
-        //         total_price_pages = 0;
-        //     }
-        //     return total_price_pages;
-        // };
-
-        // pages_counter(11);
-
-        // var total_counter = function () {
-        //     total_price_all = total_price_checkboxes + total_price_pages;
-        //     total_price.html(total_price_all);
-        // };
-        //
-        // total_counter();
-
-        $("#pages-slider").slider({
-            animate: "fast",
-            max: 60,
-            min: 1,
-            stop: function (event, ui) {
-                $("#pages-value").val($("#pages-slider").slider("option", "value"));
-                // var number = $("#pages-slider").slider("option", "value");
-                // pages_counter(number);
-                // total_counter();
-            },
-            slide: function (event, ui) {
-                $("#pages-value").val($("#pages-slider").slider("option", "value"));
-            }
-        });
-
-        pages_value.change(function () {
-            var value1 = $("#pages-value").val();
-
-            if (value1 < 61) {
-                $("#pages-slider").slider("value", value1);
-            } else {
-                $("#pages-value").val(60);
-                $("#pages-slider").slider("value", 60);
-            }
-
-            // pages_counter(value1);
-            // total_counter();
-        });
-
-
-        // фильтрация ввода в поля
-        $("#pages-value").on("keypress", function (event) {
-            var key, keyChar;
-            if (!event) {
-                var event = window.event;
-            }
-
-            if (event.keyCode) {
-                key = event.keyCode;
-            } else if (event.which) {
-                key = event.which;
-            }
-
-            if (key == null || key == 0 || key == 8 || key == 13 || key == 9 || key == 46 || key == 37 || key == 39) {
-                return true;
-            }
-            keyChar = String.fromCharCode(key);
-
-            if (!/\d/.test(keyChar)) {
-                return false;
-            }
-
-        });
-
-
-        // $(".js--prices-input").on("click", function () {
-        //     if($(this).attr('checked')) {
-        //         $(this).attr('checked', false);
-        //     }
-        //     else {
-        //         $(this).attr('checked', true);
-        //     }
-        //
-        //     counter();
-        //     // total_counter();
-        //
-        // });
-
-        // pages_accepting.on("click", function () {
-        //     if($(this).attr('checked')) {
-        //         $(this).attr('checked', false);
-        //
-        //         console.log(pages_value.val());
-        //
-        //         counter();
-        //         pages_counter(pages_value.val(0));
-        //         total_price_all = total_price_checkboxes + 0;
-        //         total_price.html(total_price_all);
-        //     }
-        //     else {
-        //         $(this).attr('checked', true);
-        //         counter();
-        //         pages_counter(pages_value.val(1));
-        //         total_counter();
-        //     }
-        // });
-    });
-</script>
-<script>
-    /*===========timer==================*/
-    function getTimeRemaining(endtime) {
-        var t = Date.parse(endtime) - Date.parse(new Date());
-        var minutes = Math.floor((t / 1000 / 60) % 60);
-        var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-        var days = Math.floor(t / (1000 * 60 * 60 * 24));
-        return {
-            total: t,
-            days: days,
-            hours: hours,
-            minutes: minutes
-        };
-    }
-
-    function initializeClock(id, endtime) {
-        var clock = document.getElementById(id);
-        var daysSpan = clock.querySelector(".timer__days");
-        var hoursSpan = clock.querySelector(".timer__hours");
-        var minutesSpan = clock.querySelector(".timer__minutes");
-
-        function updateClock() {
-            var t = getTimeRemaining(endtime);
-
-            if (t.total <= 0) {
-                clearInterval(timeinterval);
-                var deadline = new Date(Date.parse(new Date()) + 5 * 1000);
-                initializeClock('timer__clock', deadline);
-            }
-
-            daysSpan.innerHTML = t.days;
-            hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
-            minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
-        }
-
-        updateClock();
-        var timeinterval = setInterval(updateClock, 1000);
-    }
-
-    var deadline = "June 31 2019 00:00:00";
-    initializeClock("timer__clock", deadline);
-</script>
-
-<script>
-
-    var site_types = $(".js--site-type");
-    var checkboxes = $(".js--prices-input");
-    var site_type;
-    var total_price = $(".prices__form-price-number");
-
-
-    // var start_price_calc = function () {
-    //     jQuery.each(checkboxes, function () {
-    //         if ($(this).attr('checked')) {
-    //             checkbox_checked = $(this).data(site_type);
-    //         }
-    //
-    //         return checkbox_checked;
-    //     });
-    //
-    //     total_price.html(checkbox_checked);
-    // };
-    //
-
-    /*======================ОБХОД МАССИВА ТИПОВ САЙТА И ОПРЕДЕЛЕНИЕ ВВЫБРАННОГО ТИПА ПРИ ЗАГРУЗКЕ===================================*/
-    jQuery.each(site_types, function () {
-        if ($(this).attr('checked') && $(this).attr('id') === "site-card") {
-            site_type = "site-card";
-        } else if ($(this).attr('checked') && $(this).attr('id') === "landing") {
-            site_type = "landing";
-        } else if ($(this).attr('checked') && $(this).attr('id') === "corporate") {
-            site_type = "corporate";
-        } else if ($(this).attr('checked') && $(this).attr('id') === "e-store") {
-            site_type = "e-store";
-        } else if ($(this).attr('checked') && $(this).attr('id') === "other") {
-            site_type = "other";
-        }
-
-        // start_price_calc();
-        return site_type;
-    });
-
-    // console.log(site_type);
-    /*=============================================================================*/
-
-    var checkbox_checked = 0;
-    /*======================ПОЛУЧЕНИЕ ПЕРЕМЕННОЙ И ОПРЕДЕЛЕНИЕ ВВЫБРАННОГО ТИПА САЙТА===================================*/
-    var site_type_detecting = function (variable) {
-        var ext_variable = variable;
-
-        if (ext_variable.attr('id') === "site-card") {
-            site_type = "site-card";
-        } else if (ext_variable.attr('id') === "landing") {
-            site_type = "landing";
-        } else if (ext_variable.attr('id') === "corporate") {
-            site_type = "corporate";
-        } else if (ext_variable.attr('id') === "e-store") {
-            site_type = "e-store";
-        } else if (ext_variable.attr('id') === "other") {
-            site_type = "other";
-        }
-
-        console.log(site_type);
-        checkbox_checked = 0;
-
-        jQuery.each(checkboxes, function () {
-            if ($(this).attr('checked') && site_type !== "other") {
-                checkbox_checked += $(this).data(site_type);
-                $(".prices__form-price-value--string").css("display", "none");
-                $(".prices__form-price-value--number").css("display", "inline-block");
-            }
-            else if ($(this).attr('checked') && site_type === "other") {
-                $(".prices__form-price-value--number").css("display", "none");
-                $(".prices__form-price-value--string").css("display", "inline-block");
-            }
-
-            return checkbox_checked;
-        });
-        // console.log(checkbox_checked);
-        // start_price_calc();
-        return site_type;
-
-    };
-    /*=============================================================================*/
-
-    /*========================ОТЛОВ СОБЫТИЯ КЛИКА ПО ИНПУТУ ТИПА САЙТА И ЗАПУСК ФУНКЦИИ ОПРЕДЕЛЕНИЯ ТИПА===================================*/
-    $(".js--site-type").on("click", function () {
-
-        site_type_detecting($(this));
-        total_price.html(checkbox_checked);
-    });
-    /*=============================================================================*/
-
-    /*========================ПРОХОД МАССИВА ЧЕКБОКСОВ ПРИ ЗАГРУЗКЕ СТРАНИЦЫ И ПОДСЧЕТ СУММЫ ВЫБРАННЫХ===================================*/
-
-    jQuery.each(checkboxes, function () {
-        if ($(this).attr('checked') && site_type !== "other") {
-
-            // console.log($(this).data(site_type));
-            $(".prices__form-price-value--string").css("display", "none");
-            $(".prices__form-price-value--number").css("display", "inline-block");
-            checkbox_checked += $(this).data(site_type);
-
-        } else if ($(this).attr('checked') && site_type === "other") {
-            $(".prices__form-price-value--number").css("display", "none");
-            $(".prices__form-price-value--string").css("display", "inline-block");
-        }
-
-        return checkbox_checked;
-    });
-    total_price.html(checkbox_checked);
-
-
-    checkboxes.on("click", function () {
-        if ($(this).attr('checked')) {
-            $(this).attr('checked', false);
-
-            if (site_type !== "other") {
-                console.log($(this).data(site_type));
-                checkbox_checked -= $(this).data(site_type);
-                $(".prices__form-price-value--string").css("display", "none");
-                $(".prices__form-price-value--number").css("display", "inline-block");
-            }
-            // console.log($(this).data(site_type));
-        }
-
-        else if(site_type === "other") {
-            $(".prices__form-price-value--number").css("display", "none");
-            $(".prices__form-price-value--string").css("display", "inline-block");
-        }
-
-        else {
-            $(this).attr('checked', true);
-            if (site_type !== "other") {
-                console.log($(this).data(site_type));
-                checkbox_checked += $(this).data(site_type);
-                $(".prices__form-price-value--string").css("display", "none");
-                $(".prices__form-price-value--number").css("display", "inline-block");
-            }
-        }
-        console.log(checkbox_checked);
-
-        total_price.html(checkbox_checked);
-    });
-
-
-    // total_price.html(checkbox_checked);
-
-
-    // var price = 0;
-
-    // console.log(checkbox_checked);
-    // checkboxes.on("click", function () {
-    //     if ($(this).attr('checked')) {
-    //         $(this).attr('checked', false);
-    //         // price -= $(this).data(site_type);
-    //     } else {
-    //         $(this).attr('checked', true);
-    //         console.log($(this).data(site_type));
-    //         checkbox_checked += $(this).data(site_type);
-    //     }
-    //     console.log(checkbox_checked);
-    //     total_price.html(checkbox_checked);
-    // });
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>

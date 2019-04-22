@@ -72,6 +72,10 @@
   //background: red;
 }
 
+.slick-list {
+  overflow: visible !important;
+}
+
 .portfolio__slider-item {
   margin: 0 10px;
   //width: 220px !important;
@@ -79,7 +83,7 @@
   //border-radius: 10px;
   box-shadow: 0 0 30px rgba(150, 150, 150, 0);
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.5s;
   background: rgba(255, 0, 0, 0.2);
   opacity: 0.8;
   cursor: pointer;
@@ -100,9 +104,42 @@
   overflow: visible;
 }
 
+.portfolio__slider-arrows-container {
+  position: relative;
+}
+
+.slick-prev.slick-arrow,
+.slick-next.slick-arrow {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 0;
+  background: #ffffff url("../img/next.svg") no-repeat center;
+  background-size: 15px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(150, 150, 255, 0.25);
+  transform: translateY(-50%);
+  transition: 0.3s;
+  z-index: 1;
+
+  &:active {
+    background: #ffeb00 url("../img/next.svg") no-repeat center;
+    background-size: 15px;
+  }
+}
+
+.slick-prev.slick-arrow {
+  left: 10px;
+  transform: translateY(-50%) rotate(180deg);
+}
+.slick-next.slick-arrow {
+  right: 10px;
+}
+
 @media @tablet-widths {
   .portfolio {
-    margin-top: -170px;
+    margin-top: -100px;
   }
 
   .portfolio__wrapper {
@@ -129,6 +166,17 @@
     text-align: center;
   }
 
+  .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+    width: 45px;
+    height: 45px;
+    background-size: 20px;
+
+    &:active {
+      background-size: 20px;
+    }
+  }
+
   .portfolio__slider-container {
     margin: 70px auto 160px;
     width: 660px;
@@ -150,11 +198,30 @@
 
 @media @desktop-widths {
   .portfolio {
-    margin-top: -107px;
+    margin-top: -60px;
   }
   .portfolio__wrapper {
     width: 83%;
     max-width: 841px;
+  }
+
+  .slick-prev.slick-arrow,
+  .slick-next.slick-arrow {
+    width: 65px;
+    height: 65px;
+    background-size: 28px;
+
+    &:hover {
+      background: #ffeb00 url("../img/next.svg") no-repeat center;
+      background-size: 28px;
+    }
+  }
+
+  .slick-prev.slick-arrow {
+    left: 3vw;
+  }
+  .slick-next.slick-arrow {
+    right: 3vw;
   }
 
   .portfolio__slider-container {

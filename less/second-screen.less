@@ -153,6 +153,10 @@
   }
 }
 
+.second-screen__hidden-link {
+  display: none;
+}
+
 .second-screen__item-sticker {
   position: absolute;
   top: -12px;
@@ -242,7 +246,8 @@
     left: 0;
     width: 17px;
     height: 17px;
-    background: red;
+    background: url("../img/check.svg") no-repeat center;
+    background-size: 16px;
   }
 
   &:last-of-type {
@@ -288,13 +293,13 @@
     &::after {
       content: "";
       position: absolute;
-      top: 45%;
+      top: 47%;
       left: 0;
       width: 100%;
-      height: 130px;
+      height: 80px;
       //height: 143px;
       background: url("../img/wave-w.png") no-repeat top left;
-      background-size: contain;
+      background-size: cover;
       //z-index: 1;
     }
   }
@@ -327,9 +332,20 @@
   }
 
   .second-screen__item {
+    position: relative;
     padding: 55px 11%;
     width: 43%;
     box-shadow: 0 5px 30px rgba(15, 25, 54, 0.05);
+  }
+
+  .second-screen__hidden-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    z-index: 1;
   }
 
   .second-screen__item-sticker {
@@ -376,16 +392,6 @@
     line-height: 22px;
     color: #636774;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 2px;
-      left: 0;
-      width: 17px;
-      height: 17px;
-      background: red;
-    }
-
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -418,9 +424,9 @@
     overflow-x: hidden;
 
     &::after {
-      top: 31%;
-      height: 145px;
-      background-size: 100vw;
+      top: 35%;
+      height: 85px;
+      background-size: cover;
     }
   }
 
@@ -478,6 +484,10 @@
       font-size: 16px;
       transform: scaleY(1);
     }
+  }
+
+  .second-screen__hidden-link {
+    display: none;
   }
 
   .second-screen__item-list {

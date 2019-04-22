@@ -105,29 +105,21 @@
 #design:checked ~ .prices__form-column label[for="design"],
 #front-end:checked ~ .prices__form-column label[for="front-end"],
 #back-end:checked ~ .prices__form-column label[for="back-end"],
-#seo:checked ~ .prices__form-column label[for="seo"],
-#pages-accept:checked ~ .prices__form-column--range label[for="pages-accept"] {
+#seo:checked ~ .prices__form-column label[for="seo"] {
   &::before,
   &::after {
     opacity: 1;
   }
 }
 
-#pages-accept:checked ~ .prices__form-column--range .prices__pages-container,
-#pages-accept:checked ~ .prices__form-column--range .prices__form-range {
-  opacity: 1;
-  pointer-events: auto;
-  user-select: auto;
-}
-
 .prices__pages-container {
   display: flex;
   align-items: baseline;
-  margin: 25px 0 35px;
-  transition: 0.3s;
-  opacity: 0.3;
-  pointer-events: none;
-  user-select: none;
+  //margin: 25px 0 35px;
+  //transition: 0.3s;
+  //opacity: 0.3;
+  //pointer-events: none;
+  //user-select: none;
 }
 
 .prices__pages-input {
@@ -148,7 +140,7 @@
 }
 
 .prices__pages-input {
-  margin-left: 10px;
+  margin-left: 15px;
   width: 30px;
   text-align: center;
   border: none;
@@ -165,9 +157,9 @@
   background: #000000;
   border: none;
   transition: 0.3s;
-  opacity: 0.3;
-  pointer-events: none;
-  user-select: none;
+  //opacity: 0.3;
+  //pointer-events: none;
+  //user-select: none;
 }
 
 .ui-slider-handle.ui-corner-all.ui-state-default {

@@ -98,6 +98,7 @@
 
 .first-screen__transparent-link {
   padding: 14px 0;
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid #1c1e25;
 
   &:active {
@@ -118,9 +119,11 @@
   }
 
   .first-screen__img-container {
+    flex-shrink: 0;
     display: inline-block;
-    width: 30vw;
-    height: 30vw;
+    margin-left: -40px;
+    width: 35vw;
+    height: 38vw;
     background: url("../img/computer.svg") no-repeat center;
     background-size: contain;
     animation: levitate 2.5s;
@@ -172,7 +175,7 @@
   }
 
   .first-screen__img-container {
-    margin-left: -110px;
+    margin-left: -90px;
     width: 45%;
     max-width: 870px;
     height: 41vw;

@@ -2405,7 +2405,7 @@ textarea {
     margin-bottom: 35px;
     padding-left: 40px;
   }
-  .contacts__item-link:hover {
+  .contacts__item-link:not(.contacts__item-link--phone):hover {
     font-weight: 600;
   }
   .contacts__form {
